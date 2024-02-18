@@ -1,0 +1,24 @@
+#auth{
+    background-image: url('https://getwallpapers.com/wallpaper/full/5/f/8/667735.jpg');
+    background-size: cover;
+    opacity: 0.5;
+}
+#imgPainting{
+    background-image:url('https://getwallpapers.com/wallpaper/full/5/f/8/667735.jpg') ;
+}
+#categorybg{
+    background-image: url('https://png.pngtree.com/background/20210717/original/pngtree-company-cream-reforestation-cute-business-picture-image_1436778.jpg');
+   background-size: cover;
+}
+#adminlanding{
+    background-image: url('../src/images/adminPageImg.jpg');
+    background-size: cover;
+    
+}
+#textadmin{
+    color: rgb(6, 6, 52);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}

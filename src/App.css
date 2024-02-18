@@ -1,3 +1,10 @@
 #homelanding{
-    background-image: url('https://i.pinimg.com/564x/c6/82/41/c6824172a06f7c86905c8133b0cb4cf6.jpg')
+    background-image: url('https://www.edding.com/fileadmin/ideas/front-cover-design/front-cover-design-additional-01.jpg');
+    overflow-x: hidden;
+}
+#imgHome{
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+   
 }

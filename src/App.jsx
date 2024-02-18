@@ -15,6 +15,9 @@ import Wishlist from './Pages/Wishlist'
 import Cart from './Pages/Cart'
 import Profile from './Pages/Profile'
 import ChatBox from './Pages/ChatBox'
+import Admin from './Pages/Admin'
+import AddProducts from './Components/AddProducts'
+import ProductPageAdmin from './Pages/ProductPageAdmin'
 
 
 
@@ -37,6 +40,12 @@ function App() {
         <Route path='/cart' element={<Cart/>} />
         <Route path='/profile' element={<Profile/>} />
         <Route path='/chatbox' element={<ChatBox/>} />
+        <Route path='/admin' element={<Admin/>} />
+        <Route path='/addproduct' element={<AddProducts />} />
+        <Route path='/adminproduct' element={<ProductPageAdmin />} />
+
+
+
 
 
         
@@ -49,7 +58,7 @@ function App() {
 
 
       </Routes>
-      <Footer />
+     
     </>
   )
 }

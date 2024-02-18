@@ -13,7 +13,7 @@ function Wishlist() {
       <Row style={{marginLeft:'30px'}} className='mt-5 container-fluid '>
         <Col className='mb-5' sm={12} md={6} lg={4} xl={3}>
           <Card className='shadow rounded bg-dark' style={{ width: '18rem' }}>
-            <Link to={'/view/1'}><Card.Img  style={{height:"250px"}} variant="top" src= "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcGR2YW5nb2doLXNlbGYtcG9ydHJhaXQtbTAxLWpvYjY2MV8yLWwxMDBvNmVmLmpwZw.jpg"
+            <Link to={'/view/1'}><Card.Img  style={{height:"250px"}} variant="top"  src="https://i.pinimg.com/564x/1c/ab/a7/1caba73dbcd796574858773db197dd0f.jpg"
             /></Link>
             <Card.Body>
               <Card.Title className='text-light text-center'>Product Title</Card.Title>

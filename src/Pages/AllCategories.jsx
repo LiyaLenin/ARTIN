@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../Components/Header'
 import { Button, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import Footer from '../Components/Footer'
 
 
 
@@ -12,15 +13,14 @@ function AllCategories() {
   return (
     <>
       <Header insideDashboard />
-      <div className='d-flex justify-content-between mt-5'>
-        <div className="me-5 ms-5" >
-          <Card style={{ width: '18rem' }} >
-            <Card.Img variant="top" src="https://i.pinimg.com/564x/f4/6b/92/f46b924c93829734af158a2328d3568b.jpg" />
-            <Card.Body>
-              <Card.Title className='text-center'>Paintings</Card.Title>
+      <div className='row ' style={{ marginTop: '60px', marginLeft: '200px', marginRight: '20px' }}>
+        <div className='col-6'>
+          <Card style={{ width: '18rem' }}>
+            <Link to={'/microart'}>
+              <Card.Img variant="top" src="https://i.pinimg.com/564x/1c/ab/a7/1caba73dbcd796574858773db197dd0f.jpg" />
 
-
-              <div>
+            </Link>     <h4 className='text-center mt-2' style={{ marginTop: '', color: 'black' }}>microart</h4>
+            <div>
                 <Link to={'/wishlist'}>
                   <Button className='btn btn-light fs-5 me-5'><i class="fa-solid fa-heart text-danger"></i></Button>
 
@@ -28,18 +28,15 @@ function AllCategories() {
                   <Button className='btn btn-light fs-5 ms-5'><i class="fa-solid fa-cart-shopping text-success"></i></Button>
 
                 </Link>            </div>
-            </Card.Body>
-
           </Card>
-
         </div>
-        <div className="me-5 " >
-          <Card style={{ width: '18rem', height: "100%" }} >
-            <Card.Img style={{ height: '100%' }} className='img-fluid' variant="top" src="https://i.pinimg.com/564x/3d/7f/52/3d7f52b150c9d19a1204be9d6d341a56.jpg" />
-            <Card.Body>
-              <Card.Title className='text-center'>Hampers</Card.Title>
+        <div className='col-6'>
+          <Card style={{ width: '18rem' }}>
+            <Link to={'/bottleart'}>
+              <Card.Img variant="top" src="https://i.pinimg.com/564x/d3/04/29/d3042909c2a38b582246c27f969785c4.jpg" />
 
-              <div>
+            </Link>       <h4 className='text-center mt-2' style={{ marginTop: '', color: 'black' }}>Bottle art</h4>
+            <div>
                 <Link to={'/wishlist'}>
                   <Button className='btn btn-light fs-5 me-5'><i class="fa-solid fa-heart text-danger"></i></Button>
 
@@ -47,40 +44,15 @@ function AllCategories() {
                   <Button className='btn btn-light fs-5 ms-5'><i class="fa-solid fa-cart-shopping text-success"></i></Button>
 
                 </Link>            </div>
-            </Card.Body>
-
           </Card>
-
         </div>
-        <div className="me-5 " >
+        <div className='col-6 mt-5'>
+          <Card style={{ width: '18rem' }}>
+            <Link to={'/paintings'}>
+              <Card.Img variant="top" src="https://i.pinimg.com/564x/a8/78/65/a878658a51870621969582c24d1394a0.jpg" />
 
-          <Card style={{ width: '18rem', height: "100%" }} >
-            <Card.Img style={{ height: '455px' }} variant="top" src="https://i.pinimg.com/474x/8a/18/af/8a18afd51066c07e3e5325d63a8dd264.jpg" />
-            <Card.Body>
-              <Card.Title className='text-center'>Bottle Art</Card.Title>
-
-
-              <div>
-                <Link to={'/wishlist'}>
-                  <Button className='btn btn-light fs-5 me-5'><i class="fa-solid fa-heart text-danger"></i></Button>
-
-                </Link><Link to={'/cart'} >
-                  <Button className='btn btn-light fs-5 ms-5'><i class="fa-solid fa-cart-shopping text-success"></i></Button>
-
-                </Link>            </div>               </Card.Body>
-
-          </Card>
-
-
-        </div>
-        <div className="me-5 " >
-          <Card style={{ width: '18rem', height: "100%" }} >
-            <Card.Img style={{ height: '460px' }} className='img-fluid' variant="top" src="https://i.pinimg.com/564x/3e/b2/53/3eb253e09230d88222214fd62461085f.jpg" />
-            <Card.Body>
-              <Card.Title className='text-center'>Micro Art</Card.Title>
-
-
-              <div>
+            </Link>       <h4 className='text-center mt-2' style={{ marginTop: '', color: 'black' }}>Paintings</h4>
+            <div>
                 <Link to={'/wishlist'}>
                   <Button className='btn btn-light fs-5 me-5'><i class="fa-solid fa-heart text-danger"></i></Button>
 
@@ -88,16 +60,30 @@ function AllCategories() {
                   <Button className='btn btn-light fs-5 ms-5'><i class="fa-solid fa-cart-shopping text-success"></i></Button>
 
                 </Link>            </div>
-            </Card.Body>
-
           </Card>
+        </div>
+        <div className='col-6 mt-5'>
+          <Card style={{ width: '18rem' }}>
+            <Link to={'/hampers'}>
+              <Card.Img variant="top" src="https://i.pinimg.com/564x/0e/97/24/0e9724b36b3e1929b979aaa758684bc8.jpg" />
 
+            </Link>     <h4 className='text-center mt-2 ' style={{ marginTop: 'px', color: 'black' }}>Hampers</h4>
+            <div>
+                <Link to={'/wishlist'}>
+                  <Button className='btn btn-light fs-5 me-5'><i class="fa-solid fa-heart text-danger"></i></Button>
 
+                </Link><Link to={'/cart'} >
+                  <Button className='btn btn-light fs-5 ms-5'><i class="fa-solid fa-cart-shopping text-success"></i></Button>
+
+                </Link>            </div>
+          </Card>
         </div>
       </div>
 
 
 
+
+      <Footer />
 
 
 
@@ -152,7 +138,8 @@ function AllCategories() {
      <div><MicroArt/></div>
      <div><Hampers/></div>
     </div> */}
-    </>
+  
+  </>
   )
 }
 
